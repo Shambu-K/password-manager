@@ -2,6 +2,18 @@ from curses import window
 from tkinter import *
 from turtle import width
 
+#Saving Data
+def saveData():
+    website = entry_website.get()
+    username = entry_username.get()
+    password = entry_password.get()
+
+    with open("data.txt", "a") as data_log:
+        data_log.write(f"{website} | {username} | {password}\n")
+        entry_website.delete(0, END)
+        entry_username.delete(0, END)
+        entry_password.delete(0, END)
+
 
 # UI Setup
 
@@ -27,6 +39,7 @@ label_password.grid(row=3, column=0, columnspan=1)
 #Entries
 entry_website = Entry(width=35)
 entry_website.grid(row=1, column=1, columnspan=2)
+entry_website.focus()
 
 entry_username = Entry(width=35)
 entry_username.grid(row=2, column=1, columnspan=2)
@@ -38,7 +51,7 @@ entry_password.grid(row=3, column=1, columnspan=1)
 gen_password_button = Button(text="Generate Password")
 gen_password_button.grid(row=3, column=2)
 
-add_button = Button(text="Add", width=32)
+add_button = Button(text="Add", width=32, command=saveData)
 add_button.grid(row=4, column=1, columnspan=2)
 
 window.mainloop()
