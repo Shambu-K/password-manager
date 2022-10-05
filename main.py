@@ -1,6 +1,8 @@
 from curses import window
+from queue import Empty
 from tkinter import *
 from turtle import width
+from tkinter import messagebox
 
 #Saving Data
 def saveData():
@@ -8,11 +10,18 @@ def saveData():
     username = entry_username.get()
     password = entry_password.get()
 
-    with open("data.txt", "a") as data_log:
-        data_log.write(f"{website} | {username} | {password}\n")
-        entry_website.delete(0, END)
-        entry_username.delete(0, END)
-        entry_password.delete(0, END)
+    if len(website) == 0 or len(username) == 0 or len(password) == 0:
+        messagebox.showwarning(title="Warning!", message="Do not leave any fields empty")
+
+    else:
+        verify = messagebox.askokcancel(title=website, message=f"The following details will be saved:\nEmail: {username} " f"\nPassword: {password}\n")
+
+        if verify:
+            with open("data.txt", "a") as data_log:
+                data_log.write(f"{website} | {username} | {password}\n")
+                entry_website.delete(0, END)
+                entry_username.delete(0, END)
+                entry_password.delete(0, END)
 
 
 # UI Setup
