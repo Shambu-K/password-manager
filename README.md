@@ -14,6 +14,7 @@ A password manager app which stores all your passwords in a txt file, and is als
    
 * Run the python file <br />
    ```  python3 main.py```
+* If you have difficulty installing, or it feels like a burden, you can simply run the executable present in the **dist** folder
 
 ## Usage
 
