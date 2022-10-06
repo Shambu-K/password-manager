@@ -4,7 +4,7 @@ from tkinter import *
 from turtle import width
 from tkinter import messagebox
 import random
-# import pyperclip
+import pyperclip
 
 #Password generator
 def generatePassword():
@@ -30,7 +30,7 @@ def generatePassword():
     # print(f"ans: {password}")
 
     entry_password.insert(0, password)
-    # pyperclip.copy(password)
+    pyperclip.copy(password)
 
 
 #Saving Data
