@@ -22,7 +22,7 @@ A password manager app which stores all your passwords in a txt file, and is als
 * Alternatively, you can generate the executable by running the following commands <br />
       ```  pip install pyinstaller``` <br />
       ```  pyinstaller --onefile -w main.py``` 
-* The executable created will be present in the **dist** directory. Copy it to the main(**password-manager**) directory and launch it.
+* The executable created will be present in the **dist** directory. Copy it to the root(**password-manager**) directory and launch it.
 
 ## Usage
 
