@@ -2,6 +2,8 @@
 
 ## Description
 A password manager app which stores all your passwords in a txt file, and is also capable of generating strong passwords to keep hackers at bay.
+<br />
+![img](ss.png "Program Still")
 
 ## Installation
 * Make sure that you have python3 installed in your system
