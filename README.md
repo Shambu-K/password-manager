@@ -18,7 +18,7 @@ A password manager app which stores all your passwords in a txt file, and is als
 ## Usage
 
 * Enter the website name, your email ID, and password in the fields provided
-* Click on the **Generate password** button to generate a random password
+* Click on the **Generate Password** button to generate a random password
 * Click on the **Add** button to save your authentication details
 * In case,you miss any fields a dialogue box will pop up prompting you to fill all the fields
 * Once you've filled all the details, the program will ask you to verify them before saving them in a file
