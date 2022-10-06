@@ -9,9 +9,9 @@ A password manager app which stores all your passwords in a txt file, and is als
 * Make sure that you have python3 installed in your system
 
 * Install the tkinter module for python using pip <br />
-      ```  pip install tk```
-*Install the following packages to use the copy to clipboard feature <br />
-      ```  pip install pyclipper```
+      ```  pip install tk```  
+* Install the following packages to use the copy to clipboard feature <br />
+      ```  pip install pyclipper```             <br />
       ```  sudo apt-get install xclip```
 
 * Clone this repository <br />
