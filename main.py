@@ -80,6 +80,7 @@ entry_website.grid(row=1, column=1, columnspan=2)
 entry_website.focus()
 
 entry_username = Entry(width=35)
+entry_username.insert(0,"shambukavir958@gmail.com")
 entry_username.grid(row=2, column=1, columnspan=2)
 
 entry_password = Entry(width=15)
