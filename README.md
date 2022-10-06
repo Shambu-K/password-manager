@@ -10,6 +10,9 @@ A password manager app which stores all your passwords in a txt file, and is als
 
 * Install the tkinter module for python using pip <br />
       ```  pip install tk```
+*Install the following packages to use the copy to clipboard feature <br />
+      ```  pip install pyclipper```
+      ```  sudo apt-get install xclip```
 
 * Clone this repository <br />
    ```  git clone https://github.com/Shambu-K/password-manager.git```
@@ -22,6 +25,7 @@ A password manager app which stores all your passwords in a txt file, and is als
 
 * Enter the website name, your email ID, and password in the fields provided
 * Click on the **Generate Password** button to generate a random password
+* The generated password is automatically copied to your clipboard, so you can simply paste it while setting up new credentials in a particular website.
 * Click on the **Add** button to save your authentication details
 * In case,you miss any fields a dialogue box will pop up prompting you to fill all the fields
 * Once you've filled all the details, the program will ask you to verify them before saving them in a file
