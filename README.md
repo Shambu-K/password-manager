@@ -31,4 +31,4 @@ A password manager app which stores all your passwords in a txt file, and is als
 * The generated password is automatically copied to your clipboard, so you can simply paste it while setting up new credentials in a particular website.
 * Click on the **Add** button to save your authentication details
 * In case,you miss any fields a dialogue box will pop up prompting you to fill all the fields
-* Once you've filled all the details, the program will ask you to verify them before saving them in a file
+* Once you've filled all the details, the program will ask you to verify them before saving them in **data.txt** file
